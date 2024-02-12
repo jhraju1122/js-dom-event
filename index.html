@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js DOM Events</title>
+</head>
+<body>
+    <h1 onclick="console.log('click me dear')">DOM er ajke special events</h1>
+    <button onclick="console.log(77)">click me</button>
+   
+    
+    <!-- option-1 -->
+    <button onclick="document.body.style.backgroundColor='red'">turn into red</button>
+
+        <!-- option-2 -->
+    <button onclick="makeBlack()">turn into black</button>
+
+        <!-- option-3 -->
+    <button onclick="makeBlue()">turn into blue</button>
+        <!-- option-4 -->
+    <button id="makeGreen">turn into green</button>
+
+
+    <script src="js/event.js"></script>
+
+    <!-- option-2 -->
+<script>
+    function makeBlack(){
+document.body.style.backgroundColor = 'black';
+    }
+</script>
+</body>
+</html>
